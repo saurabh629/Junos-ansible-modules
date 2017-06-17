@@ -1,0 +1,23 @@
+
+interfaces:
+  - physical_interface: em1
+    description: vmx3_to_vmx1
+    ip_address: 30.30.30.30/24
+
+  - physical_interface: em2
+    description: vmx3_to_vmx2
+    ip_address: 20.20.20.30/24
+
+bgp:
+  - remote_as: 1
+    remote_peer: 30.30.30.10
+    remote_description: to_vmx1
+    local_ip: 30.30.30.30
+
+  - remote_as : 2
+    remote_peer: 20.20.20.20
+    remote_description: to_vmx2
+    local_ip: 20.20.20.30
+
+bgpasn: 3
+bgp_router_id: 30.30.30.1

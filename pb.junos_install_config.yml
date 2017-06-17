@@ -1,0 +1,36 @@
+---
+  - name: Get Device Facts
+    hosts: juniper_routers
+    roles:
+     - Juniper.junos 
+    connection: local
+    gather_facts: no
+    tasks:
+     - name: Checking NETCONF connectivity
+       wait_for: host={{ inventory_hostname }} port=830 timeout=5
+
+     - name: Retrieve information from devices running Junos OS
+       junos_get_facts:  
+         host={{ inventory_hostname }} 
+         user={{ ansible_ssh_user }} 
+         passwd={{ ansible_ssh_pass }}
+       register: junos
+
+     - name: version
+       debug: msg={{ junos.facts.version }}
+
+     - name: create template configuration
+       template: src=templates/bgp_template.j2 dest=config/{{ item }}.conf
+       with_items: "{{ inventory_hostname }}"
+
+     - name: apply config to devices
+       junos_install_config:
+         host={{ inventory_hostname }} 
+         user={{ ansible_ssh_user }} 
+         passwd={{ ansible_ssh_pass }}
+         file=config/{{ item }}.conf
+         logfile=log/install_config.log
+         port=830
+         comment="configured by ANSIBLE"
+       with_items: "{{ inventory_hostname }}"
+    

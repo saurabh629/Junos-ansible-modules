@@ -1,0 +1,46 @@
+interfaces {
+{% for int in interfaces %}
+    {{ int.physical_interface }} {
+        description {{ int.description }};
+        unit 0 {
+{% if int.ip_address is defined %}
+            family inet {
+                address {{ int.ip_address }};
+        }
+{% else %}
+            family inet;
+{% endif %}
+        }
+    } {% endfor %}
+}
+routing-options {
+    autonomous-system {{ bgpasn }};
+    router-id {{ bgp_router_id }};
+}
+protocols {
+    bgp {
+        export export_bgp;
+{% for peer in bgp %}
+        group {{ peer.remote_description }} {
+            description {{ peer.remote_description }};
+            local-address {{ peer.local_ip }};
+            neighbor {{ peer.remote_peer }};
+            peer-as {{ peer.remote_as }};
+        }
+{% endfor %}
+    }
+}
+policy-options {
+    policy-statement export_bgp {
+        term 1 {
+            from {
+                route-filter 10.0.0.0/8 prefix-length-range /24-/24;
+            }
+            then accept;
+        }
+        term END {
+            then reject;
+        }
+    }
+}
+

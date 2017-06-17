@@ -1,0 +1,26 @@
+interfaces {
+{% for int in interfaces %}
+    {{ int.physical_interface }} {
+        delete: description {{ int.description }};
+        unit 0 {
+{% if int.ip_address is defined %}
+            family inet {
+                delete: address {{ int.ip_address }};
+        }
+{% else %}
+            family inet;
+{% endif %}
+        }
+    } {% endfor %}
+}
+routing-options {
+    delete: autonomous-system {{ bgpasn }};
+    delete: router-id {{ bgp_router_id }};
+}
+protocols {
+    delete: bgp;
+}
+policy-options {
+    delete: policy-statement export_bgp;
+}
+

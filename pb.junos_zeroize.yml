@@ -1,0 +1,16 @@
+---
+  - name: Get Device Facts
+    hosts: juniper_routers_zeroize
+    roles:
+     - Juniper.junos 
+    connection: local
+    gather_facts: no
+    tasks:
+     - name: demonstrate junos_zeroize
+       junos_zeroize:
+         host={{ inventory_hostname }}
+         user={{ ansible_ssh_user }}
+         port=830
+         passwd={{ ansible_ssh_pass }}
+         zeroize=zeroize
+         logfile=/etc/ansible/log/zeroize.log

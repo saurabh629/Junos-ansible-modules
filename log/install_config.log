@@ -1,0 +1,96 @@
+2017-06-17 12:20:29,258:CONFIG:192.168.56.30:connecting to host: root@192.168.56.30:830
+2017-06-17 12:20:29,269:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:20:29,270:CONFIG:192.168.56.20:connecting to host: root@192.168.56.20:830
+2017-06-17 12:20:29,277:CONFIG:192.168.56.10:connecting to host: root@192.168.56.10:830
+2017-06-17 12:20:29,280:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:20:29,288:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:20:29,684:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:20:29,692:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:20:29,697:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:20:29,903:ncclient.transport.session:initialized: session-id=2248 | server_capabilities=<dictionary-keyiterator object at 0x7f1050245f18>
+2017-06-17 12:20:29,903:CONFIG:192.168.56.30:pushing file: /etc/ansible/config/192.168.56.30.conf
+2017-06-17 12:20:29,904:CONFIG:192.168.56.30:taking lock
+2017-06-17 12:20:29,904:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:29,914:ncclient.transport.session:initialized: session-id=2336 | server_capabilities=<dictionary-keyiterator object at 0x7fdfe40f6f18>
+2017-06-17 12:20:29,914:CONFIG:192.168.56.20:pushing file: /etc/ansible/config/192.168.56.20.conf
+2017-06-17 12:20:29,914:CONFIG:192.168.56.20:taking lock
+2017-06-17 12:20:29,915:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:29,916:ncclient.transport.session:initialized: session-id=2281 | server_capabilities=<dictionary-keyiterator object at 0x7fcebb2eff18>
+2017-06-17 12:20:29,917:CONFIG:192.168.56.10:pushing file: /etc/ansible/config/192.168.56.10.conf
+2017-06-17 12:20:29,917:CONFIG:192.168.56.10:taking lock
+2017-06-17 12:20:29,917:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,019:CONFIG:192.168.56.30:loading config
+2017-06-17 12:20:30,020:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,029:CONFIG:192.168.56.20:loading config
+2017-06-17 12:20:30,030:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,032:CONFIG:192.168.56.10:loading config
+2017-06-17 12:20:30,033:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,085:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,094:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,097:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,252:CONFIG:192.168.56.30:doing a commit-check, please be patient
+2017-06-17 12:20:30,252:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,259:CONFIG:192.168.56.20:doing a commit-check, please be patient
+2017-06-17 12:20:30,259:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,262:CONFIG:192.168.56.10:doing a commit-check, please be patient
+2017-06-17 12:20:30,262:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,568:CONFIG:192.168.56.30:committing change, please be patient
+2017-06-17 12:20:30,568:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,574:CONFIG:192.168.56.20:committing change, please be patient
+2017-06-17 12:20:30,574:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:30,577:CONFIG:192.168.56.10:committing change, please be patient
+2017-06-17 12:20:30,577:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:31,284:CONFIG:192.168.56.30:unlocking
+2017-06-17 12:20:31,284:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:31,291:CONFIG:192.168.56.20:unlocking
+2017-06-17 12:20:31,291:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:31,293:CONFIG:192.168.56.10:unlocking
+2017-06-17 12:20:31,293:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:20:31,400:CONFIG:192.168.56.30:change completed
+2017-06-17 12:20:31,400:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 12:20:31,407:CONFIG:192.168.56.20:change completed
+2017-06-17 12:20:31,408:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 12:20:31,409:CONFIG:192.168.56.10:change completed
+2017-06-17 12:20:31,409:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:34:45,390:CONFIG:192.168.56.20:connecting to host: root@192.168.56.20:830
+2017-06-17 16:34:45,399:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:34:45,403:CONFIG:192.168.56.30:connecting to host: root@192.168.56.30:830
+2017-06-17 16:34:45,411:CONFIG:192.168.56.10:connecting to host: root@192.168.56.10:830
+2017-06-17 16:34:45,416:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:34:45,421:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:34:45,887:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:34:45,907:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:34:45,909:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:34:46,123:ncclient.transport.session:initialized: session-id=2909 | server_capabilities=<dictionary-keyiterator object at 0x7f90f017af18>
+2017-06-17 16:34:46,124:CONFIG:192.168.56.20:pushing file: /home/ubuntu/Junos-ansible-modules/config/192.168.56.20.conf
+2017-06-17 16:34:46,124:CONFIG:192.168.56.20:taking lock
+2017-06-17 16:34:46,124:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,133:ncclient.transport.session:initialized: session-id=2817 | server_capabilities=<dictionary-keyiterator object at 0x7fc27cd98f18>
+2017-06-17 16:34:46,134:CONFIG:192.168.56.30:pushing file: /home/ubuntu/Junos-ansible-modules/config/192.168.56.30.conf
+2017-06-17 16:34:46,134:CONFIG:192.168.56.30:taking lock
+2017-06-17 16:34:46,134:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,142:ncclient.transport.session:initialized: session-id=2854 | server_capabilities=<dictionary-keyiterator object at 0x7fe8a6aa6f18>
+2017-06-17 16:34:46,142:CONFIG:192.168.56.10:pushing file: /home/ubuntu/Junos-ansible-modules/config/192.168.56.10.conf
+2017-06-17 16:34:46,142:CONFIG:192.168.56.10:taking lock
+2017-06-17 16:34:46,143:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,189:CONFIG:192.168.56.20:loading config
+2017-06-17 16:34:46,189:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,199:CONFIG:192.168.56.30:loading config
+2017-06-17 16:34:46,200:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,208:CONFIG:192.168.56.10:loading config
+2017-06-17 16:34:46,208:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,304:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,316:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,323:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,419:CONFIG:192.168.56.20:unlocking
+2017-06-17 16:34:46,419:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,430:CONFIG:192.168.56.30:unlocking
+2017-06-17 16:34:46,430:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,488:CONFIG:192.168.56.10:unlocking
+2017-06-17 16:34:46,488:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:34:46,534:CONFIG:192.168.56.20:change completed
+2017-06-17 16:34:46,534:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:34:46,546:CONFIG:192.168.56.30:change completed
+2017-06-17 16:34:46,546:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:34:46,553:CONFIG:192.168.56.10:change completed
+2017-06-17 16:34:46,553:ncclient.operations.rpc:Requesting 'CloseSession'

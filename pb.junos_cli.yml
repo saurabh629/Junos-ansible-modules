@@ -1,0 +1,43 @@
+---
+  - name: junos cli playbook
+    hosts: juniper_routers
+    roles:
+     - Juniper.junos
+    connection: local
+    gather_facts: no
+    tasks:
+     - name: checking NETCONF connectivity
+       wait_for: 
+         host={{ inventory_hostname }}
+         port=830
+         timeout=5
+     - name: retrieve information from devices running JUNOS OS
+       junos_get_facts:
+         host={{ inventory_hostname }}
+         user={{ ansible_ssh_user }}
+         passwd={{ ansible_ssh_pass }}
+       register: junos
+
+     - name: print the junos version on device
+       debug: msg={{ junos.facts.version }}
+
+     - name: get the hostname of the device
+       junos_cli:
+         user=root
+         cli="show interfaces terse"
+         host={{ inventory_hostname }}
+         passwd=cisco123
+         dest="output/{{ inventory_hostname }}.txt"
+         format=text
+         logfile=log/get_config_cli.log
+
+     - name: get the hostname of the device
+       junos_cli:
+         user: "root"
+         cli: "show interfaces terse"
+         host: "{{ inventory_hostname }}"
+         passwd: cisco123
+         dest: "output/{{ inventory_hostname }}.xml"
+         format: xml
+         logfile: log/get_config_cli.log
+

@@ -1,0 +1,26 @@
+---
+  - name: Get Device Facts
+    hosts: juniper_routers
+    roles:
+     - Juniper.junos 
+    connection: local
+    gather_facts: no
+    vars:
+      loopback_interfaces:
+        lo0:
+          ip: 2.2.2.2
+          mask: 32
+    tasks:
+     - name: Checking NETCONF connectivity
+       wait_for: host={{ inventory_hostname }} port=830 timeout=5
+
+     - name: Retrieve information from devices running Junos OS
+       junos_get_facts:  
+         host={{ inventory_hostname }} 
+         user={{ ansible_ssh_user }} 
+         passwd={{ ansible_ssh_pass }}
+       register: junos
+
+     - name: JUNOS version
+       debug: msg={{ junos.facts.version }}
+

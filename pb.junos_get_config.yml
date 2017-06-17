@@ -1,0 +1,33 @@
+---
+  - name: Get Device Facts
+    hosts: juniper_routers
+    roles:
+     - Juniper.junos 
+    connection: local
+    gather_facts: no
+    tasks:
+     - name: Checking NETCONF connectivity
+       wait_for: host={{ inventory_hostname }} port=830 timeout=5
+
+     - name: get config from devices xml format
+       junos_get_config:
+         host: "{{ inventory_hostname }}" 
+         logfile: log/get_config.log
+         dest: "output/{{ inventory_hostname }}.xml"
+         passwd: "{{ ansible_ssh_pass }}"
+         format: xml
+         port: 830
+         filter: "protocols"
+       with_items: "{{ inventory_hostname }}"
+
+     - name: get config from devices text format
+       junos_get_config:
+         host: "{{ inventory_hostname }}"
+         logfile: log/get_config.log
+         dest: "output/{{ inventory_hostname }}.txt"
+         passwd: "{{ ansible_ssh_pass }}"
+         format: text
+         port: 830
+         filter: "interfaces"
+       with_items: "{{ inventory_hostname }}"
+    

@@ -1,0 +1,11 @@
+interfaces {
+  {% for ifd, int in vars.loopback_interfaces.items() %}
+  {{ ifd }} {
+    unit 0 {
+      family inet {
+        address {{ int.ip }}/{{ int.mask }};
+      }
+    }
+  }
+  {% endfor %}
+}

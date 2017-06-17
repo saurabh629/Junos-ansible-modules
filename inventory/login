@@ -1,0 +1,8 @@
+[juniper_routers:vars]
+#ansible_ssh_user=root
+#ansible_ssh_pass=cisco123
+
+ansible_connection=local
+ansible_user=root
+ansible_password=cisco123
+ansible_port=22

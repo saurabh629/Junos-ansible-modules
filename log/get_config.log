@@ -1,0 +1,96 @@
+2017-06-17 12:28:03,141:CONFIG:192.168.56.20:connecting to host: root@192.168.56.20:830
+2017-06-17 12:28:03,148:CONFIG:192.168.56.30:connecting to host: root@192.168.56.30:830
+2017-06-17 12:28:03,150:CONFIG:192.168.56.10:connecting to host: root@192.168.56.10:830
+2017-06-17 12:28:03,151:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:28:03,159:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:28:03,162:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:28:03,558:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:28:03,569:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:28:03,571:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:28:03,781:ncclient.transport.session:initialized: session-id=2595 | server_capabilities=<dictionary-keyiterator object at 0x7f70fe520578>
+2017-06-17 12:28:03,782:CONFIG:192.168.56.30:Getting config with filter=<configuration><protocols/></configuration>
+2017-06-17 12:28:03,782:CONFIG:192.168.56.30:Getting config with options={'format': 'xml'}
+2017-06-17 12:28:03,782:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:28:03,789:ncclient.transport.session:initialized: session-id=2687 | server_capabilities=<dictionary-keyiterator object at 0x7ff8dd8be578>
+2017-06-17 12:28:03,789:CONFIG:192.168.56.20:Getting config with filter=<configuration><protocols/></configuration>
+2017-06-17 12:28:03,789:CONFIG:192.168.56.20:Getting config with options={'format': 'xml'}
+2017-06-17 12:28:03,790:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:28:03,790:ncclient.transport.session:initialized: session-id=2632 | server_capabilities=<dictionary-keyiterator object at 0x7fc9080e0578>
+2017-06-17 12:28:03,790:CONFIG:192.168.56.10:Getting config with filter=<configuration><protocols/></configuration>
+2017-06-17 12:28:03,791:CONFIG:192.168.56.10:Getting config with options={'format': 'xml'}
+2017-06-17 12:28:03,791:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:28:03,899:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 12:28:03,905:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 12:28:03,906:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 12:28:05,183:CONFIG:192.168.56.10:connecting to host: root@192.168.56.10:830
+2017-06-17 12:28:05,194:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:28:05,197:CONFIG:192.168.56.30:connecting to host: root@192.168.56.30:830
+2017-06-17 12:28:05,209:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:28:05,213:CONFIG:192.168.56.20:connecting to host: root@192.168.56.20:830
+2017-06-17 12:28:05,223:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 12:28:05,669:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:28:05,688:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:28:05,689:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 12:28:05,906:ncclient.transport.session:initialized: session-id=2600 | server_capabilities=<dictionary-keyiterator object at 0x7f789e3d7578>
+2017-06-17 12:28:05,907:CONFIG:192.168.56.30:Getting config with filter=<configuration><interfaces/></configuration>
+2017-06-17 12:28:05,907:CONFIG:192.168.56.30:Getting config with options={'format': 'text'}
+2017-06-17 12:28:05,908:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:28:05,913:ncclient.transport.session:initialized: session-id=2692 | server_capabilities=<dictionary-keyiterator object at 0x7f60358af578>
+2017-06-17 12:28:05,913:CONFIG:192.168.56.20:Getting config with filter=<configuration><interfaces/></configuration>
+2017-06-17 12:28:05,913:CONFIG:192.168.56.20:Getting config with options={'format': 'text'}
+2017-06-17 12:28:05,913:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:28:05,914:ncclient.transport.session:initialized: session-id=2637 | server_capabilities=<dictionary-keyiterator object at 0x7fe42ce6a578>
+2017-06-17 12:28:05,914:CONFIG:192.168.56.10:Getting config with filter=<configuration><interfaces/></configuration>
+2017-06-17 12:28:05,914:CONFIG:192.168.56.10:Getting config with options={'format': 'text'}
+2017-06-17 12:28:05,914:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 12:28:06,023:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 12:28:06,030:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 12:28:06,031:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:33:02,776:CONFIG:192.168.56.10:connecting to host: root@192.168.56.10:830
+2017-06-17 16:33:02,784:CONFIG:192.168.56.30:connecting to host: root@192.168.56.30:830
+2017-06-17 16:33:02,789:CONFIG:192.168.56.20:connecting to host: root@192.168.56.20:830
+2017-06-17 16:33:02,794:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:33:02,798:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:33:02,799:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:33:03,238:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:33:03,238:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:33:03,238:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:33:03,460:ncclient.transport.session:initialized: session-id=2780 | server_capabilities=<dictionary-keyiterator object at 0x7fd6696c6578>
+2017-06-17 16:33:03,461:CONFIG:192.168.56.30:Getting config with filter=<configuration><protocols/></configuration>
+2017-06-17 16:33:03,461:CONFIG:192.168.56.30:Getting config with options={'format': 'xml'}
+2017-06-17 16:33:03,461:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:33:03,466:ncclient.transport.session:initialized: session-id=2868 | server_capabilities=<dictionary-keyiterator object at 0x7f2ae708e4c8>
+2017-06-17 16:33:03,467:CONFIG:192.168.56.20:Getting config with filter=<configuration><protocols/></configuration>
+2017-06-17 16:33:03,467:CONFIG:192.168.56.20:Getting config with options={'format': 'xml'}
+2017-06-17 16:33:03,467:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:33:03,471:ncclient.transport.session:initialized: session-id=2817 | server_capabilities=<dictionary-keyiterator object at 0x7fe6a380f578>
+2017-06-17 16:33:03,471:CONFIG:192.168.56.10:Getting config with filter=<configuration><protocols/></configuration>
+2017-06-17 16:33:03,471:CONFIG:192.168.56.10:Getting config with options={'format': 'xml'}
+2017-06-17 16:33:03,472:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:33:03,577:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:33:03,584:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:33:03,587:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:33:04,970:CONFIG:192.168.56.20:connecting to host: root@192.168.56.20:830
+2017-06-17 16:33:04,975:CONFIG:192.168.56.30:connecting to host: root@192.168.56.30:830
+2017-06-17 16:33:04,977:CONFIG:192.168.56.10:connecting to host: root@192.168.56.10:830
+2017-06-17 16:33:04,986:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:33:04,987:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:33:04,991:ncclient.transport.ssh:Connected (version 2.0, client OpenSSH_5.9)
+2017-06-17 16:33:05,388:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:33:05,405:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:33:05,407:ncclient.transport.ssh:Authentication (password) successful!
+2017-06-17 16:33:05,613:ncclient.transport.session:initialized: session-id=2785 | server_capabilities=<dictionary-keyiterator object at 0x7f3b1d686578>
+2017-06-17 16:33:05,613:CONFIG:192.168.56.30:Getting config with filter=<configuration><interfaces/></configuration>
+2017-06-17 16:33:05,613:CONFIG:192.168.56.30:Getting config with options={'format': 'text'}
+2017-06-17 16:33:05,614:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:33:05,627:ncclient.transport.session:initialized: session-id=2822 | server_capabilities=<dictionary-keyiterator object at 0x7f60c94c3578>
+2017-06-17 16:33:05,627:CONFIG:192.168.56.10:Getting config with filter=<configuration><interfaces/></configuration>
+2017-06-17 16:33:05,627:CONFIG:192.168.56.10:Getting config with options={'format': 'text'}
+2017-06-17 16:33:05,628:ncclient.transport.session:initialized: session-id=2873 | server_capabilities=<dictionary-keyiterator object at 0x7f0b0401d578>
+2017-06-17 16:33:05,628:CONFIG:192.168.56.20:Getting config with filter=<configuration><interfaces/></configuration>
+2017-06-17 16:33:05,628:CONFIG:192.168.56.20:Getting config with options={'format': 'text'}
+2017-06-17 16:33:05,629:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:33:05,628:ncclient.operations.rpc:Requesting 'ExecuteRpc'
+2017-06-17 16:33:05,679:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:33:05,745:ncclient.operations.rpc:Requesting 'CloseSession'
+2017-06-17 16:33:05,745:ncclient.operations.rpc:Requesting 'CloseSession'
